@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS mydatalecturer;
+USE mydatalecturer;
+
+CREATE TABLE IF NOT EXISTS lecturers (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(255) NOT NULL UNIQUE, 
+  age INT NOT NULL,
+  couses_count INT DEFAULT 0
+);
